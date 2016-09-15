@@ -1,0 +1,1 @@
+groupsArr = ["Gryffindor","Hufflepuff","Ravenclaw","Slytherin","Default"]

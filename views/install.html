@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>the Sorting Hat</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,600italic">
+    <link rel="stylesheet" href="css/bcapp-pattern-lab.css" />
+    <link rel="stylesheet" href="css/website.css" />
+	<link rel="stylesheet" href="css/sorting-hat.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+
+
+<body ng-app="sortingHat" ng-controller="sortControl" ng-init="getCustomerGroups()">
+	<header>
+		<h1>the Sorting Hat</h1>
+		<svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	</header>
+	<div class="settings-container">
+	<h2>Settings</h2>
+		<table class="table">
+			<thead class="table-head">
+				<tr>
+					<th>
+						Customer Group
+					</th>
+					<th>
+						Map?
+					</th>
+					<th>
+						Form Field Information
+					</th>
+				</tr>
+			</thead>
+			<tbody class="table-body" >
+				<tr ng-repeat="group in groups">
+					<td>
+						{{group.name}}
+					</td>
+					<td>
+						<input type="checkbox" ng-click="checkboxChange(group.name)"/>
+					</td>
+					<td ng-show="group.mapGroup">
+						<div>
+							<span class="form-field-heading">Type</span>
+							<div class="form-field-type-inputs">
+								<label for="built-in" class="form-field-type-label">Built-In</label>
+								<input name="form-field-type" type="radio" id="built-in"/>
+								<label for="custom" class="form-field-type-label">Custom</label>
+								<input name="form-field-type" type="radio" id="custom"/>
+							</div>
+
+						</div>
+						<div>
+							<label for="form-field-name" class="form-field-heading">Name</label>
+							<input type="text" class="form-field-type-inputs" id="form-field-name"/>
+						</div>
+						<div>
+							<label for="form-field-value" class="form-field-heading">Value</label>
+							<input type="text" class="form-field-type-inputs" id="form-field-value"/>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel bottom-save-panel">
+		<button class="button">Cancel</button>
+		<button class="button button--primary">Save</button>
+	</div>
+	<script src="app/app.js"></script>
+</body>
+</html>

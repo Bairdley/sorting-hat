@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Project Sorting Hat | Sorting your customers so you don't have to!</title>
+    <link href="/views/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/views/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/views/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/views/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="./images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <header id="header" role="banner">
+        <div class="container">
+            <div id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
+                        <li><a href="#services">Guide</a></li>
+                        <li><a href="#portfolio">Settings</a></li>
+                        <!--<li><a href="#about-us">About Us</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header><!--/#header-->
+
+    <section id="main-slider" class="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>Project Sorting Hat</h1>
+                        <p class="lead">Easily manage your customer signups by automatically sorting them into the right customer group!</p>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.carousel-inner-->
+    </section><!--/#main-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="box first">
+              <h1>Setup Instructions</h1>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-list-alt icon-md icon-color1"></i>
+                            <h4>Create a custom form field</h4>
+                            <p>Create a form field in the <a href="/manage/settings/account-signup-form" target=_blank>Address Form settings</a> that will be used to sort customers into corresponding groups.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-pencil icon-md icon-color2"></i>
+                            <h4>List the available values</h4>
+                            <p>Once the Address Form field is created, list all available values that a customer can choose.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-group icon-md icon-color3"></i>
+                            <h4>Create your customer groups</h4>
+                            <p><a href="/manage/customers/groups" target=_blank>Create the customer groups</a> that correspond with each value you've selected. You can hide categories or even give discounts based on these groups. <a href="https://support.bigcommerce.com/articles/Public/Setting-up-Customer-Groups/?q=customer+groups" target=_blank>More info here.</a></p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-magic icon-md icon-color4"></i>
+                            <h4>Tell us the field name</h4>
+                            <p>In the "Form Field" box below, enter the name of the Address Form field you created so we can find it when customers sign up.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-map-marker icon-md icon-color5"></i>
+                            <h4>Map your customer groups & values</h4>
+                            <p>In the box next to each of your customer group names, type the exact name of the form field value that should sort a customer into that group.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-thumbs-up icon-md icon-color6"></i>
+                            <h4>You're all set!</h4>
+                            <p>Now anytime your customers sign up, they will be placed in the right group based on their response in your form field.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="box">
+                <div class="center gap">
+                    <h2>Settings</h2>
+                    <p class="lead">Let's get started - fill out the name of your form field and map each of the values to the corresponding customer group.</p>
+                <div id="settings">
+                  <form action="/save" method="post" target=_>
+                  <p> <h4 class="small_gap">Step 1: Tell us the name of your form field</h4></p>
+                  <p class="acct_gap"><strong>Account Form Field Name:</strong>
+                      <input type="text" name="fieldname">
+                  </p>
+                  <p><h4 class="small_gap">Step 2: Tell us the form field values that should map to each of your customer groups</h4></p>
+                  <div id="groups_list">
+                  <ul>
+                    <li>(CG one)</li>
+                    <li>(CG two)</li>
+                    <li>(CG three)</li>
+                    <li>(CG four)</li>
+                  </ul>
+                 </div><!--/#groups_list-->
+                  <div id="settings_input">
+                  <ul>
+                    <li><input type="text" name="group1"></li>
+                    <li><input type="text" name="group2"></li>
+                    <li><input type="text" name="group3"></li>
+                    <li><input type="text" name="group4"></li>
+                  </ul>
+                 </div><!--/#settings_input-->
+                  <input type="submit" value="Save">
+                </form>
+              </div><!--/.settings-->
+              </div><!--/.center-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+<!--
+    <section id="about-us">
+        <div class="container">
+            <div class="box">
+                <div class="center">
+                    <h2>Meet the Team</h2>
+                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="gap"></div>
+                <div id="team-scroller" class="carousel scale">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
+                                        <h3>Agnes Smith<small class="designation">CEO &amp; Founder</small></h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
+                                        <h3>Donald Ford<small class="designation">Senior Vice President</small></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left-arrow" href="#team-scroller" data-slide="prev">
+                        <i class="icon-angle-left icon-4x"></i>
+                    </a>
+                    <a class="right-arrow" href="#team-scroller" data-slide="next">
+                        <i class="icon-angle-right icon-4x"></i>
+                    </a>
+                </div><!--/.carousel-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#about-us-->
+-->
+    <section id="contact">
+        <div class="container">
+            <div class="box last">
+                <div class="row">
+                        <h1>Contact Form</h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#contact-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/views/js/jquery.js"></script>
+    <script src="/views/js/bootstrap.min.js"></script>
+    <script src="/views/js/jquery.isotope.min.js"></script>
+    <script src="/views/js/jquery.prettyPhoto.js"></script>
+    <script src="/views/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>Project Sorting Hat | Sorting your customers so you don't have
+    to!</title>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel=
+    'stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Convergence' rel=
+    'stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/material.min.css" rel="stylesheet" type="text/css" />
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head><!--/head-->
+<body ng-app="sortingHat">
+    <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>the Sorting Hat</h1>
+    </header>
+	<section id="settings" class="container-fluid" ng-controller="groupsController">
+		<div class="row" ng-repeat="group in groups">
+			<div class="
+				col-xs-10
+				col-xs-offset-1
+				col-sm-8
+				col-sm-offset-2
+				col-md-6
+				col-md-offset-3
+				col-lg-6
+				col-lg-offset-3
+				group-container
+				">
+				<h5>{{group}}</h5>
+				<form class="form-inline">
+					<div class="form-group-row">
+						<label for="form-field-name" class="col-xs-6 col-sm-6 col-md-4 col-lg-4">Custom Form Field</label>
+						<input type="text" id="form-field-name" class="col-xs-6 col-sm-6 col-md-8 col-lg-8"/>
+						<label for="form-field-text" class="col-xs-6 col-sm-6 col-md-4 col-lg-4">Form Field Text</label>
+						<input type="text" id="form-field-text" class="col-xs-6 col-sm-6 col-md-8 col-lg-8"/>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+    </script>
+	<script src="/js/material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.js"></script>
+
+    <script src="/js/main.js">
+    </script>
+
+</body>
+</html>
