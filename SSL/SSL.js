@@ -1,4 +1,4 @@
-var fs = require('fs');
+var fs = require('fs')
 
 var privateKey = fs.readFileSync('./SSL/server.key', 'utf8'),
     sslCert = fs.readFileSync('./SSL/2_sortinghat.us.crt', 'utf8'),
